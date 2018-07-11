@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Razer AR!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"> </script>
+  </head>  
+  <body style="margin : 0px; overflow: hidden;">
+    <a-scene embedded arjs="debugUIEnabled: false;">
+      
+      <a-assets>
+        <a-asset-item id="mouse-gltf" src="https://cdn.glitch.com/65346241-8a4d-4ec4-9dae-41d5764bc0b0%2Frazer.obj?1525667735068"></a-asset-item>
+      </a-assets>
+      
+<!--       <a-marker preset="hiro"> -->
+<!--   type="pattern" url="https://cdn.glitch.com/65346241-8a4d-4ec4-9dae-41d5764bc0b0%2Fpattern-marker.patt?1525668405061"     -->
+<!--       <a-marker preset="hiro" size="1">
+        <a-entity position="0 0.5 0" obj-model="obj: #mouse-obj;" material="color: #0c3004" scale="0.03 0.03 0.03"></a-entity>
+      </a-marker> -->
+      
+      <a-marker type="pattern" url="https://cdn.glitch.com/65346241-8a4d-4ec4-9dae-41d5764bc0b0%2Fpattern-marker.patt?1531347087417">
+        <a-entity position="0 0.5 0" obj-model="obj: #mouse-gltf" material="color: #444444" scale="0.03 0.03 0.03"></a-entity>
+      </a-marker>
+      
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
