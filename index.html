@@ -16,19 +16,8 @@
   </head>  
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs="debugUIEnabled: false;">
-      
-      <a-assets>
-        <a-asset-item id="mouse-gltf" src="https://cdn.glitch.com/65346241-8a4d-4ec4-9dae-41d5764bc0b0%2Frazer.obj?1525667735068"></a-asset-item>
-      </a-assets>
-      
-<!--       <a-marker preset="hiro"> -->
-<!--   type="pattern" url="https://cdn.glitch.com/65346241-8a4d-4ec4-9dae-41d5764bc0b0%2Fpattern-marker.patt?1525668405061"     -->
-<!--       <a-marker preset="hiro" size="1">
-        <a-entity position="0 0.5 0" obj-model="obj: #mouse-obj;" material="color: #0c3004" scale="0.03 0.03 0.03"></a-entity>
-      </a-marker> -->
-      
       <a-marker type="pattern" url="https://cdn.glitch.com/65346241-8a4d-4ec4-9dae-41d5764bc0b0%2Fpattern-marker.patt?1531347087417">
-        <a-entity position="0 0.5 0" obj-model="obj: #mouse-gltf" material="color: #444444" scale="0.03 0.03 0.03"></a-entity>
+        <a-entity position="0 0.5 0" gltf-model="url(https://cdn.glitch.com/65346241-8a4d-4ec4-9dae-41d5764bc0b0%2Frazor-simple-green.gltf?1531350229112)" material=" roughness: 1; metalness: 0" scale="0.03 0.03 0.03"></a-entity>
       </a-marker>
       
       <a-entity camera></a-entity>
